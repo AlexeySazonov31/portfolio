@@ -1,11 +1,66 @@
 import { useLocation } from "preact-iso";
-import { ReactElement } from "preact/compat";
+import { ReactElement, useEffect, useState } from "preact/compat";
 import SocialIcons from "../lib/social-icons";
+
+const elementIsVisibleInViewport = (el, partiallyVisible = false) => {
+  const { top, left, bottom, right } = el.getBoundingClientRect();
+  const { innerHeight, innerWidth } = window;
+  return partiallyVisible
+    ? ((top > 0 && top < innerHeight) || (bottom > 0 && bottom < innerHeight)) &&
+        ((left > 0 && left < innerWidth) || (right > 0 && right < innerWidth))
+    : top >= 0 && left >= 0 && bottom <= innerHeight && right <= innerWidth;
+};
 
 export function Header() {
   const { url } = useLocation();
 
-  console.log(url);
+  const [isAboutVisible, setIsAboutVisible] = useState(false);
+  const [isExperienceVisible, setIsExperienceVisible] = useState(false);
+  const [isProjectsVisible, setIsProjectsVisible] = useState(false);
+
+  const [active, setActive] = useState<string>("about");
+
+  let about: HTMLElement | undefined;
+  let experience: HTMLElement | undefined;
+  let projects: HTMLElement | undefined;
+
+  useEffect(() => {
+    about = document.getElementById("about");
+    experience = document.getElementById("experience");
+    projects = document.getElementById("projects");
+
+    const handle = (elem: Element) => {
+      if (elem) {
+        setIsAboutVisible(elementIsVisibleInViewport(about, true));
+        setIsExperienceVisible(elementIsVisibleInViewport(experience, true));
+        setIsProjectsVisible(elementIsVisibleInViewport(projects));
+      }
+    };
+
+    window.addEventListener("scroll", () => handle(about));
+    // Initial check on component mount
+    handle(about);
+
+    return () => {
+      window.removeEventListener("scroll", () => handle(about));
+    };
+  }, []);
+
+  useEffect(() => {
+
+    if(isAboutVisible){
+      setActive("about");
+    } else if (isExperienceVisible && !isProjectsVisible ){
+      setActive("experience");
+    } else if (isProjectsVisible){
+      setActive("projects");
+    } 
+
+    console.log(isAboutVisible)
+    console.log(isExperienceVisible)
+    console.log(isProjectsVisible)
+
+  }, [isAboutVisible, isExperienceVisible, isProjectsVisible])
 
   return (
     <>
@@ -22,11 +77,15 @@ export function Header() {
         <nav class="nav hidden lg:block" aria-label="In-page jump links">
           <ul class="mt-16 w-max">
             {["about", "experience", "projects"].map((elem, index) => (
-              <li key={index} data-active={url === `/#${elem}`}>
-                <a class="group flex items-center py-3" href={`#${elem}`}>
-                  <span class="mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
-                  <span class="text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
-                    {elem.toLocaleUpperCase()}
+              <li key={index}>
+                <a
+                  data-active={active === elem}
+                  class="group flex items-center py-3"
+                  href={`#${elem}`}
+                >
+                  <span class="mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-data-[active='true']:w-16 group-data-[active='true']:bg-slate-200 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none delay-100"></span>
+                  <span class="text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200 group-data-[active='true']:text-slate-200 transition-colors delay-100">
+                    {elem}
                   </span>
                 </a>
               </li>
@@ -84,9 +143,15 @@ const socialData: SocialIconDataProps[] = [
     icon: SocialIcons.whatsapp,
   },
   {
+    link: "tel:+375447410980",
+    ariaLabel: "Phone (opens in a new tab)",
+    title: "Phone",
+    icon: SocialIcons.phone,
+  },
+  {
     link: "mailto:name@sazonaualiaksei@gmail.com",
-    ariaLabel: "Gmail (opens in a new tab)",
-    title: "Gmail",
+    ariaLabel: "Mail (opens in a new tab)",
+    title: "Mail",
     icon: SocialIcons.mail,
   },
 ];

@@ -1,3 +1,7 @@
 export function Home() {
-  return <h1 className="">Home</h1>;
+  return <div className="w-full">
+    <div className="h-[500px] relative -top-24 pt-24" id="about">about</div>
+    <div className="h-[500px] relative -top-24 pt-24" id="experience">experience</div>
+    <div className="h-[500px] relative -top-24 pt-24" id="projects">projects</div>
+  </div>;
 }
