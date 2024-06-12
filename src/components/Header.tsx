@@ -1,66 +1,11 @@
-import { useLocation } from "preact-iso";
-import { ReactElement, useEffect, useState } from "preact/compat";
+import { ReactElement } from "preact/compat";
+
+import { useActiveElementByIds } from "../hooks/use-active-element-by-ids";
+
 import SocialIcons from "../lib/social-icons";
 
-const elementIsVisibleInViewport = (el, partiallyVisible = false) => {
-  const { top, left, bottom, right } = el.getBoundingClientRect();
-  const { innerHeight, innerWidth } = window;
-  return partiallyVisible
-    ? ((top > 0 && top < innerHeight) || (bottom > 0 && bottom < innerHeight)) &&
-        ((left > 0 && left < innerWidth) || (right > 0 && right < innerWidth))
-    : top >= 0 && left >= 0 && bottom <= innerHeight && right <= innerWidth;
-};
-
 export function Header() {
-  const { url } = useLocation();
-
-  const [isAboutVisible, setIsAboutVisible] = useState(false);
-  const [isExperienceVisible, setIsExperienceVisible] = useState(false);
-  const [isProjectsVisible, setIsProjectsVisible] = useState(false);
-
-  const [active, setActive] = useState<string>("about");
-
-  let about: HTMLElement | undefined;
-  let experience: HTMLElement | undefined;
-  let projects: HTMLElement | undefined;
-
-  useEffect(() => {
-    about = document.getElementById("about");
-    experience = document.getElementById("experience");
-    projects = document.getElementById("projects");
-
-    const handle = (elem: Element) => {
-      if (elem) {
-        setIsAboutVisible(elementIsVisibleInViewport(about, true));
-        setIsExperienceVisible(elementIsVisibleInViewport(experience, true));
-        setIsProjectsVisible(elementIsVisibleInViewport(projects));
-      }
-    };
-
-    window.addEventListener("scroll", () => handle(about));
-    // Initial check on component mount
-    handle(about);
-
-    return () => {
-      window.removeEventListener("scroll", () => handle(about));
-    };
-  }, []);
-
-  useEffect(() => {
-
-    if(isAboutVisible){
-      setActive("about");
-    } else if (isExperienceVisible && !isProjectsVisible ){
-      setActive("experience");
-    } else if (isProjectsVisible){
-      setActive("projects");
-    } 
-
-    console.log(isAboutVisible)
-    console.log(isExperienceVisible)
-    console.log(isProjectsVisible)
-
-  }, [isAboutVisible, isExperienceVisible, isProjectsVisible])
+  const active = useActiveElementByIds(["about", "experience", "projects"]);
 
   return (
     <>
@@ -71,7 +16,7 @@ export function Header() {
         <h2 class="mt-3 text-lg font-normal tracking-tight text-slate-200 sm:text-xl">
           Junior+ Frontend Engineer
         </h2>
-        <p class="mt-4 max-w-xs leading-normal text-slate-400">
+        <p class="mt-4 max-w-xs text-slate-400 font-light">
           I build pixel-perfect, engaging, and accessible digital experiences.
         </p>
         <nav class="nav hidden lg:block" aria-label="In-page jump links">
@@ -99,14 +44,6 @@ export function Header() {
         ))}
       </ul>
     </>
-    // <nav>
-    //   <a href="/" class={url == "/" && "active"}>
-    //     Home
-    //   </a>
-    //   <a href="/404" class={url == "/404" && "active"}>
-    //     404
-    //   </a>
-    // </nav>
   );
 }
 
