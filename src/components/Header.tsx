@@ -10,17 +10,24 @@ export function Header() {
   return (
     <>
       <div>
-        <h1 class="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
-          <a href="/">Sazonau Aliaksei</a>
-        </h1>
+        <div className="flex flex-row flex-nowrap gap-4 items-center">
+          <img className="w-24 h-24 rounded-xl pointer-events-none" src="../../public/avatar2.jpg" alt="Avatar" />
+          <h1 class="text-4xl font-bold tracking-tight text-slate-200 sm:text-[44px] leading-[45px]">
+            <a href="/">
+              Alexey
+              <br />
+              Sazonov
+            </a>
+          </h1>
+        </div>
         <h2 class="mt-3 text-lg font-normal tracking-tight text-slate-200 sm:text-xl">
-          Junior+ Frontend Engineer
+          Junior+ Fullstack Engineer
         </h2>
-        <p class="mt-4 max-w-xs text-slate-400 font-light">
-          I build pixel-perfect, engaging, and accessible digital experiences.
+        <p class="mt-3 max-w-xs text-slate-400 font-extralight leading-7">
+          I produce high-quality, engaging, and user-friendly digital experiences.
         </p>
         <nav class="nav hidden lg:block" aria-label="In-page jump links">
-          <ul class="mt-16 w-max">
+          <ul class="mt-12 w-max">
             {["about", "experience", "projects"].map((elem, index) => (
               <li key={index}>
                 <a
@@ -29,7 +36,7 @@ export function Header() {
                   href={`#${elem}`}
                 >
                   <span class="mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-data-[active='true']:w-16 group-data-[active='true']:bg-slate-200 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none delay-100"></span>
-                  <span class="text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200 group-data-[active='true']:text-slate-200 transition-colors delay-100">
+                  <span class="text-xs font-semibold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200 group-data-[active='true']:text-slate-200 transition-colors delay-100">
                     {elem}
                   </span>
                 </a>
@@ -97,7 +104,7 @@ function SocialIcon({ data }: { data: SocialIconDataProps }) {
   return (
     <li class="mr-5 text-xs shrink-0">
       <a
-        class="block hover:text-slate-200"
+        className="block text-slate-100 hover:text-white transition hover:scale-110"
         href={data.link}
         target="_blank"
         rel="noreferrer noopener"
