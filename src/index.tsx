@@ -8,11 +8,12 @@ import { NotFound } from "./pages/_404.jsx";
 import "./style.css";
 
 export function App() {
+
   return (
     <LocationProvider>
       <GradientDiv
         className="h-full w-full"
-        effectColor="rgba(7, 1, 56, 0.5)"
+        effectColor="#050029"
         backgroundColor="#03001C"
       >
         <div className="mx-auto min-h-screen max-w-screen-xl font-poppins px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">

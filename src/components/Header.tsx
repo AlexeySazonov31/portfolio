@@ -10,16 +10,19 @@ export function Header() {
   return (
     <>
       <div>
-        <div className="flex flex-row flex-nowrap gap-4 items-center">
-          <img className="w-24 h-24 rounded-xl pointer-events-none" src="../../public/avatar2.jpg" alt="Avatar" />
-          <h1 class="text-4xl font-bold tracking-tight text-slate-200 sm:text-[44px] leading-[45px]">
-            <a href="/">
-              Alexey
-              <br />
+        <a href="/">
+          <div className="flex flex-row flex-nowrap gap-4 items-center">
+            <img
+              className="w-24 h-24 rounded-xl pointer-events-none"
+              src="/avatar.jpg"
+              alt="Avatar"
+            />
+            <h1 class="text-4xl font-bold tracking-tight text-slate-200 sm:text-[44px] leading-[45px]">
+              Alexey <br className="hidden lg:block" />
               Sazonov
-            </a>
-          </h1>
-        </div>
+            </h1>
+          </div>
+        </a>
         <h2 class="mt-3 text-lg font-normal tracking-tight text-slate-200 sm:text-xl">
           Junior+ Fullstack Engineer
         </h2>
