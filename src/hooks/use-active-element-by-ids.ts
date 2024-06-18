@@ -20,7 +20,8 @@ export const useActiveElementByIds = (arrayIds: string[]) => {
 
     const handle = () => {
       if (Object.keys(isVisible).length > 0) {
-        setIsVisible(Object.keys(isVisible).reduce((acc, elem, index) => ({ ...acc, [elem]: elementIsVisibleInViewport(htmlElemets[index], index > 1 ? false : true) }), {}))
+        // setIsVisible(Object.keys(isVisible).reduce((acc, elem, index) => ({ ...acc, [elem]: elementIsVisibleInViewport(htmlElemets[index], index > 1 ? false : true) }), {}))
+        setIsVisible(Object.keys(isVisible).reduce((acc, elem, index) => ({ ...acc, [elem]: elementIsVisibleInViewport(htmlElemets[index], true) }), {}))
       }
     };
 

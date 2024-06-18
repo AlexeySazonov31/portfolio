@@ -1,37 +1,5 @@
 import { SkillItem } from "./SkillItem";
 
-interface ProjectItem {
-  title: string;
-  content: string;
-  skills: string[];
-  link: string;
-  imageSrc: string;
-}
-
-const projectsItems: ProjectItem[] = [
-  {
-    title: "Junior Fullstack Engineer",
-    content: "string",
-    skills: ["Javascript", "PHP", "Shopify", "Tilda", "React", "Webflow", "Meta ads", "ManyChat"],
-    link: "https://www.linkedin.com/company/%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D1%85%D0%B0%D0%B1/",
-    imageSrc: "/projects/choice.jpg",
-  },
-  {
-    title: "Junior Fullstack Engineer",
-    content: "string",
-    skills: ["Javascript", "PHP", "Shopify", "Tilda", "React", "Webflow", "Meta ads", "ManyChat"],
-    link: "https://www.linkedin.com/company/%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D1%85%D0%B0%D0%B1/",
-    imageSrc: "/projects/choice.jpg",
-  },
-  {
-    title: "Junior Frontend Engineer",
-    content: "string",
-    skills: ["HTML", "CSS", "Javascript"],
-    link: "https://www.fiverr.com/",
-    imageSrc: "/projects/choice.jpg",
-  },
-];
-
 export const Projects = () => {
   return (
     <section
@@ -49,36 +17,39 @@ export const Projects = () => {
           <ProjectItem data={data} key={id} />
         ))}
       </ol>
-      {/* <div className="mt-12">
+      <div className="py-1 mb-14">
+        <h2 className="text-2xl text-slate-200">Pet-Projects</h2>
         <a
-          className="inline-flex items-baseline font-normal leading-tight text-slate-200 hover:text-[#B7ADFF] focus-visible:text-[#B7ADFF] group/link text-base transition"
-          href="/resume.pdf"
+          className="mt-3 inline-flex items-baseline font-normal leading-tight text-slate-200 hover:text-[#B7ADFF] focus-visible:text-[#B7ADFF] group/link text-base transition"
+          href="https://github.com/AlexeySazonov31"
           target="_blank"
           rel="noreferrer noopener"
-          aria-label="View Full Resume (opens in a new tab)"
-          title="View Full Resume (opens in a new tab)"
+          aria-label="View on GitHub (opens in a new tab)"
+          title="View on GitHub (opens in a new tab)"
         >
           <span>
-            View Full{" "}
-            <span className="inline-block">
-              Resume
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="inline-block h-4 w-4 mb-[2px] ml-2 shrink-0 transition-transform group-hover/link:-translate-y-[2px] group-hover/link:translate-x-[2px] group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none translate-y-px"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </span>
+            View on GitHub{" "}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="inline-block h-4 w-4 mb-[2px] ml-2 shrink-0 transition-transform group-hover/link:-translate-y-[2px] group-hover/link:translate-x-[2px] group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none translate-y-px"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
           </span>
         </a>
-      </div> */}
+      </div>
+      <ol className="group/list">
+        {petProjectsItems.map((data, id) => (
+          <ProjectItem data={data} key={id} />
+        ))}
+      </ol>
     </section>
   );
 };
@@ -142,3 +113,75 @@ function ProjectItem({ data }: { data: ProjectItem }) {
     </li>
   );
 }
+
+// * projects data:
+
+interface ProjectItem {
+  title: string;
+  content: string;
+  skills: string[];
+  link: string;
+  imageSrc: string;
+}
+
+const projectsItems: ProjectItem[] = [
+  {
+    title: "FluidFuel Info",
+    content: "string...",
+    skills: ["Javascript", "HTML", "CSS", "Webflow"],
+    link: "https://www.fluidfuel.co/",
+    imageSrc: "/projects/fluid.jpg",
+  },
+  {
+    title: "Gifto Box Store",
+    content: "string...",
+    skills: ["PHP", "Shopify", "Meta Ads", "SmartSender"],
+    link: "https://gifto.vip/",
+    imageSrc: "/projects/gifto.jpg",
+  },
+  {
+    title: "GummiMi Store",
+    content: "string...",
+    skills: ["PHP", "Shopify"],
+    link: "https://gummimi.com/",
+    imageSrc: "/projects/gummimi.jpg",
+  },
+  {
+    title: "Remedial Pax Store",
+    content: "string",
+    skills: ["PHP", "Shopify", "ManyChat"],
+    link: "https://remedial.store/",
+    imageSrc: "/projects/remedial.jpg",
+  },
+];
+
+const petProjectsItems: ProjectItem[] = [
+  {
+    title: "FluidFuel Info",
+    content: "string...",
+    skills: ["Javascript", "HTML", "CSS", "Webflow"],
+    link: "https://www.fluidfuel.co/",
+    imageSrc: "/projects/fluid.jpg",
+  },
+  {
+    title: "Gifto Box Store",
+    content: "string...",
+    skills: ["PHP", "Shopify", "Meta Ads", "SmartSender"],
+    link: "https://gifto.vip/",
+    imageSrc: "/projects/gifto.jpg",
+  },
+  {
+    title: "GummiMi Store",
+    content: "string...",
+    skills: ["PHP", "Shopify"],
+    link: "https://gummimi.com/",
+    imageSrc: "/projects/gummimi.jpg",
+  },
+  {
+    title: "Remedial Pax Store",
+    content: "string",
+    skills: ["PHP", "Shopify", "ManyChat"],
+    link: "https://remedial.store/",
+    imageSrc: "/projects/remedial.jpg",
+  },
+];
