@@ -1,4 +1,4 @@
-const About = () => {
+export const About = () => {
   return (
     <section
       className="relative -top-24 pt-24 text-slate-400 font-extralight leading-7"
@@ -44,5 +44,3 @@ const About = () => {
     </section>
   );
 };
-
-export default About;
