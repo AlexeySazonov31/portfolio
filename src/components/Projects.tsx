@@ -124,64 +124,70 @@ interface ProjectItem {
   imageSrc: string;
 }
 
+// TODO contents for commercial projects
 const projectsItems: ProjectItem[] = [
   {
     title: "FluidFuel Info",
-    content: "string...",
+    content:
+      "Create a Webflow site to elevate the FluidFuel brand, specializing in electrolyte powder packets. Develop the project with a focus on brand development and user-friendly design, emphasizing the product's nutritional benefits and travel-friendly convenience.",
     skills: ["Javascript", "HTML", "CSS", "Webflow"],
     link: "https://www.fluidfuel.co/",
     imageSrc: "/projects/fluid.jpg",
   },
   {
     title: "Gifto Box Store",
-    content: "string...",
+    content:
+      "Created and managed a high-quality Shopify store offering Gift Baskets for Women, featuring 11 unique items designed for a spa experience. Led the project with teamwork and collaboration.",
     skills: ["PHP", "Shopify", "Meta Ads", "SmartSender"],
     link: "https://gifto.vip/",
     imageSrc: "/projects/gifto.jpg",
   },
   {
     title: "GummiMi Store",
-    content: "string...",
+    content:
+      "Crafted a visually captivating Shopify site for Gummimi's Hеmp Gummies, emphasizing meticulous design and graphics. The project successfully implemented a unique brand identity, enhancing user engagement and driving sales through an immersive online experience.",
     skills: ["PHP", "Shopify"],
     link: "https://gummimi.com/",
     imageSrc: "/projects/gummimi.jpg",
   },
   {
     title: "Remedial Pax Store",
-    content: "string",
+    content:
+      "Developed a Shopify store specializing in Remedial Pax creams and serums. Custom widgets and add-ons were integrated to enhance user experience and streamline product selection, providing a seamless shopping journey.",
     skills: ["PHP", "Shopify", "ManyChat"],
     link: "https://remedial.store/",
     imageSrc: "/projects/remedial.jpg",
   },
 ];
 
+// TODO fill pet-projects
 const petProjectsItems: ProjectItem[] = [
   {
-    title: "FluidFuel Info",
-    content: "string...",
-    skills: ["Javascript", "HTML", "CSS", "Webflow"],
-    link: "https://www.fluidfuel.co/",
-    imageSrc: "/projects/fluid.jpg",
+    title: "Search Movies App by TMDB",
+    content: "Created a web app using TypeScript, React, React Query, React Router Dom, Axios, and Mantine. It lets users browse and pick movies effortlessly, using modern tech for a smooth, user-friendly experience.",
+    skills: ["TypeScript", "React", "React Query", "Mantine", "Node.js", "Express (Proxy Server)"],
+    link: "https://sas-movies.vercel.app/",
+    imageSrc: "/projects/movies.jpg",
   },
   {
-    title: "Gifto Box Store",
-    content: "string...",
-    skills: ["PHP", "Shopify", "Meta Ads", "SmartSender"],
-    link: "https://gifto.vip/",
-    imageSrc: "/projects/gifto.jpg",
+    title: "Discord Clone App",
+    content: "Developed a Discord Clone app using Next.js, TypeScript, React, React Query, Socket.io, Tailwind, Shadcn/ui, ORM - Prisma, MySQL, Uploadthing, Clerk, and LiveKit. It allows users to chat and connect seamlessly, leveraging a robust tech stack for a modern experience.",
+    skills: ["Next.js", "TypeScript", "React", "React Query", "Socket.io", "Tailwind", "Shadcn/ui", "ORM - Prisma", "MySQL", "Clerk Auth"],
+    link: "https://www.disclone.sasdev.space/",
+    imageSrc: "/projects/disclone.jpg",
   },
   {
-    title: "GummiMi Store",
-    content: "string...",
-    skills: ["PHP", "Shopify"],
-    link: "https://gummimi.com/",
-    imageSrc: "/projects/gummimi.jpg",
+    title: "Choice App: Decision Support",
+    content: "Built the Choice app using TypeScript, React, React Router Dom, and Tailwind CSS. It enables users to make selections effortlessly, leveraging modern technologies for a streamlined and intuitive experience.",
+    skills: ["TypeScript", "React", "React Router Dom", "Tailwind"],
+    link: "https://choice-react.vercel.app/",
+    imageSrc: "/projects/choice.jpg",
   },
   {
-    title: "Remedial Pax Store",
-    content: "string",
-    skills: ["PHP", "Shopify", "ManyChat"],
-    link: "https://remedial.store/",
-    imageSrc: "/projects/remedial.jpg",
+    title: "Super Mario Clone",
+    content: "Developed a web-based Super Mario Clone using Kaboom, blending classic gameplay with modern web technologies for an engaging experience.",
+    skills: ["Kaboom", "Node.js", "Express"],
+    link: "https://mario-clone.vercel.app/",
+    imageSrc: "/projects/mario.jpg",
   },
 ];
