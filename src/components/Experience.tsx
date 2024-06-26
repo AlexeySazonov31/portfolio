@@ -57,7 +57,7 @@ export const Experience = () => {
       <div className="mt-12">
         <a
           className="inline-flex items-baseline font-normal leading-tight text-slate-200 hover:text-[#B7ADFF] focus-visible:text-[#B7ADFF] group/link text-base transition"
-          href="/resume.pdf"
+          href="/cv.pdf"
           target="_blank"
           rel="noreferrer noopener"
           aria-label="View Full Resume (opens in a new tab)"
@@ -66,7 +66,7 @@ export const Experience = () => {
           <span>
             View Full{" "}
             <span className="inline-block">
-              Resume
+              Resume (rus)
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"

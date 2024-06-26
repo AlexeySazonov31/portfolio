@@ -30,7 +30,7 @@ export const GradientDiv: React.FC<GradientDivProps> = ({ children, className, e
     <div
       ref={elemRef}
       style={{
-        backgroundImage: isFull && position ? `radial-gradient( circle at ${position.x}px ${position.y}px, ${effectColor}, ${backgroundColor} 45% )` : "none",
+        backgroundImage: isFull && position ? `radial-gradient( circle at ${position.x}px ${position.y}px, ${effectColor}, ${backgroundColor} 12.5% )` : "none",
       }}
       className={className}
     >

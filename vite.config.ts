@@ -15,4 +15,8 @@ export default defineConfig({
 		}),
 		liveReload('./src/**/**/*.{ts,tsx}'),
 	],
+	preview: {
+		host: true,
+		port: 8080,
+	}
 });
