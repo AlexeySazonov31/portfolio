@@ -1,4 +1,4 @@
-name: publish
+name: Portfolio Package
 
 on:
   push:
@@ -7,11 +7,11 @@ on:
 env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.actor }}/portfolio:latest
+  IMAGE_NAME: ${{ github.actor }}/portfolio
 
 jobs:
   publish:
-    name: publish image
+    name: Portfolio Package (publish)
     runs-on: ubuntu-latest
 
     steps:
