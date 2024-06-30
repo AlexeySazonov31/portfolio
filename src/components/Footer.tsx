@@ -32,16 +32,6 @@ export const Footer = () => {
         >
           Tailwind CSS
         </a>
-        , deployed with{" "}
-        <a
-          href="https://vercel.com/"
-          className="font-light text-slate-400 hover:text-[#B7ADFF] focus-visible:text-[#B7ADFF] transition"
-          target="_blank"
-          rel="noreferrer noopener"
-          aria-label="Vercel (opens in a new tab)"
-        >
-          Vercel
-        </a>
         . All text is set in the{" "}
         <a
           href="https://fonts.google.com/specimen/Poppins/"
