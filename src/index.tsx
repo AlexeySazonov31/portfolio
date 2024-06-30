@@ -1,4 +1,5 @@
-import { LocationProvider, Router, Route, hydrate, prerender as ssr } from "preact-iso";
+import { LocationProvider, Router, Route } from "preact-iso";
+import { h, render } from "preact";
 
 import { GradientDiv } from "./components/Gradientdiv";
 import { Header } from "./components/Header";
@@ -27,12 +28,6 @@ const App = () => {
       </GradientDiv>
     </LocationProvider>
   );
-}
+};
 
-if (typeof window !== "undefined") {
-  hydrate(<App />, document.getElementById("app"));
-}
-
-export async function prerender(data) {
-	return { html: <App {...data} /> };
-}
+render(<App />, document.body);
