@@ -186,7 +186,7 @@ const petProjectsItems: ProjectItem[] = [
       "MySQL",
       "Clerk Auth",
     ],
-    link: "https://www.disclone.sasdev.space/",
+    link: "https://disclone.sasdev.space/",
     imageSrc: "/projects/disclone.jpg",
   },
   {
