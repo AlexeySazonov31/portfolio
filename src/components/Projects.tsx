@@ -129,7 +129,7 @@ const projectsItems: ProjectItem[] = [
   {
     title: "GummiMi Store",
     content:
-      "Crafted a visually captivating Shopify site for Gummimi's Hеmp Gummies, emphasizing meticulous design and graphics. The project successfully implemented a unique brand identity, enhancing user engagement and driving sales through an immersive online experience.",
+      "Crafted a visually captivating Shopify site for Gummimi's Hemp Gummies, emphasizing meticulous design and graphics. Successfully implemented a unique brand identity, enhancing user engagement and driving sales through an immersive online experience.",
     skills: ["PHP", "Shopify"],
     link: "https://gummimi.com/",
     imageSrc: "/projects/gummimi.jpg",
@@ -145,7 +145,7 @@ const projectsItems: ProjectItem[] = [
   {
     title: "FluidFuel Info",
     content:
-      "Create a Webflow site to elevate the FluidFuel brand, specializing in electrolyte powder packets. Develop the project with a focus on brand development and user-friendly design, emphasizing the product's nutritional benefits and travel-friendly convenience.",
+      "Created a Webflow site to elevate the FluidFuel brand, specializing in electrolyte powder packets. Developed the project with a focus on brand development and user-friendly design, emphasizing the product's nutritional benefits and travel-friendly convenience.",
     skills: ["Javascript", "HTML", "CSS", "Webflow"],
     link: "https://www.fluidfuel.co/",
     imageSrc: "/projects/fluid.jpg",
@@ -153,7 +153,7 @@ const projectsItems: ProjectItem[] = [
   {
     title: "Remedial Pax Store",
     content:
-      "Developed a Shopify store specializing in Remedial Pax creams and serums. Custom widgets and add-ons were integrated to enhance user experience and streamline product selection, providing a seamless shopping journey.",
+      "Developed a Shopify store specializing in Remedial Pax creams and serums. Integrated custom widgets and add-ons to enhance user experience and streamline product selection, providing a seamless shopping journey.",
     skills: ["PHP", "Shopify", "ManyChat"],
     link: "https://remedial.store/",
     imageSrc: "/projects/remedial.jpg",
@@ -165,7 +165,7 @@ const petProjectsItems: ProjectItem[] = [
   {
     title: "Search Movies App by TMDB",
     content:
-      "Created a web app using TypeScript, React, React Query, React Router Dom, Axios, and Mantine. It lets users browse and pick movies effortlessly, using modern tech for a smooth, user-friendly experience.",
+      "Created a web app using TypeScript, React, React Query, React Router Dom, Axios, and Mantine, allowing users to browse and pick movies effortlessly, leveraging modern technologies for a smooth, user-friendly experience.",
     skills: ["TypeScript", "React", "React Query", "Mantine", "Node.js", "Express (Proxy Server)"],
     link: "https://sas-movies.vercel.app/",
     imageSrc: "/projects/movies.jpg",
@@ -173,7 +173,7 @@ const petProjectsItems: ProjectItem[] = [
   {
     title: "Discord Clone App",
     content:
-      "Developed a Discord Clone app using Next.js, TypeScript, React, React Query, Socket.io, Tailwind, Shadcn/ui, ORM - Prisma, MySQL, Uploadthing, Clerk, and LiveKit. It allows users to chat and connect seamlessly, leveraging a robust tech stack for a modern experience.",
+      "Developed a Discord Clone app using Next.js, TypeScript, React, React Query, Socket.io, Tailwind, Shadcn/ui, ORM - Prisma, MySQL, Uploadthing, Clerk, and LiveKit. Enabled users to chat and connect seamlessly, leveraging a robust tech stack for a modern experience.",
     skills: [
       "Next.js",
       "TypeScript",
@@ -192,7 +192,7 @@ const petProjectsItems: ProjectItem[] = [
   {
     title: "Choice App: Decision Support",
     content:
-      "Built the Choice app using TypeScript, React, React Router Dom, and Tailwind CSS. It enables users to make selections effortlessly, leveraging modern technologies for a streamlined and intuitive experience.",
+      "Built the Choice app using TypeScript, React, React Router Dom, and Tailwind CSS, allowing users to make selections effortlessly, leveraging modern technologies for a streamlined and intuitive experience.",
     skills: ["TypeScript", "React", "React Router Dom", "Tailwind"],
     link: "https://choice-react.vercel.app/",
     imageSrc: "/projects/choice.jpg",
