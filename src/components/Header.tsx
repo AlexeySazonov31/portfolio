@@ -1,11 +1,18 @@
 import { ReactElement } from "preact/compat";
-
 import { useActiveElementByIds } from "../hooks/use-active-element-by-ids";
+import { useTranslation, Trans } from "react-i18next";
 
 import SocialIcons from "../lib/social-icons";
 
 export function Header() {
   const active = useActiveElementByIds(["about", "experience", "projects"]);
+
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = () => {
+    console.log(i18n.language);
+    i18n.changeLanguage(i18n.language === "en" ? "ru" : "en");
+  };
 
   return (
     <>
@@ -18,8 +25,7 @@ export function Header() {
               alt="Avatar"
             />
             <h1 class="text-4xl font-bold tracking-tight text-slate-200 sm:text-[44px] leading-[45px]">
-              Alexey <br className="hidden lg:block" />
-              Sazonov
+              <Trans i18nKey="header.name"></Trans>
             </h1>
           </div>
         </a>
@@ -27,11 +33,11 @@ export function Header() {
           Junior+ Fullstack Engineer
         </h2>
         <p class="mt-3 max-w-xs text-slate-400 font-extralight leading-7">
-          I produce high-quality, engaging, and user-friendly digital experiences.
+          {t("header.shortDesc")}
         </p>
         <nav class="nav hidden lg:block" aria-label="In-page jump links">
           <ul class="mt-12 w-max">
-            {["about", "experience", "projects"].map((elem, index) => (
+            {(t("header.sectionsNames", { returnObjects: true }) as []).map((elem, index) => (
               <li key={index}>
                 <a
                   data-active={active === elem}
@@ -49,6 +55,15 @@ export function Header() {
         </nav>
       </div>
       <ul class="ml-1 mt-8 flex items-center" aria-label="Social media">
+        <li class="mr-5 pr-5 text-xs shrink-0 border-r-[1px] border-r-slate-600 cursor-pointer select-none">
+          <span
+            className="block text-slate-100 hover:text-white transition hover:scale-110 border-[1px] rounded w-7 py-[2px] border-slate-100 text-center"
+            onClick={() => changeLanguage()}
+          >
+            <span class="sr-only">title</span>
+            {i18n.language === "en" ? "ru" : "en"}
+          </span>
+        </li>
         {socialData.map((elem, index) => (
           <SocialIcon data={elem} key={index} />
         ))}

@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { SkillItem } from "./SkillItem";
 
 interface ExperienceItem {
@@ -38,6 +39,8 @@ const experienceItems: ExperienceItem[] = [
 ];
 
 export const Experience = () => {
+  // const { t } = useTranslation();
+
   return (
     <section
       id="experience"

@@ -6,13 +6,13 @@ import liveReload from 'vite-plugin-live-reload'
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [
-		// preact({
-		// 	prerender: {
-		// 		enabled: false,
-		// 		renderTarget: '#app',
-		// 		additionalPrerenderRoutes: ['/404'],
-		// 	},
-		// }),
+		preact({
+			prerender: {
+				enabled: true,
+				renderTarget: '#app',
+				additionalPrerenderRoutes: ['/404'],
+			},
+		}),
 		liveReload('./src/**/**/*.{ts,tsx}'),
 	],
 	preview: {
