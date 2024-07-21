@@ -1,7 +1,7 @@
 import { LocationProvider, Router, Route } from "preact-iso";
 
 import { GradientDiv } from "./components/Gradientdiv";
-import { Header } from "./components/Header";
+import { Header } from "./components/LeftSideHeader";
 import { Home } from "./pages/Home/index.jsx";
 import { NotFound } from "./pages/_404.jsx";
 

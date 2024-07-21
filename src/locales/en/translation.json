@@ -1,0 +1,20 @@
+{
+  "header": {
+    "name": "Alexey <br className=\"hidden lg:block\" />Sazonov",
+    "shortDesc": "I produce high-quality, engaging, and user-friendly digital experiences.",
+    "sectionsNames": [
+      {
+        "id": "about",
+        "name": "about"
+      },
+      {
+        "id": "experience",
+        "name": "experience"
+      },
+      {
+        "id": "projects",
+        "name": "projects"
+      }
+    ]
+  }
+}
