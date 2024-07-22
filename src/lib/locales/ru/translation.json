@@ -1,0 +1,26 @@
+{
+  "header": {
+    "name": "Алексей <br className=\"hidden lg:block\" />Сазонов",
+    "shortDesc": "Cоздаю качественные и удобные цифровые продукты.",
+    "sectionsNames": [
+      {
+        "id": "about",
+        "name": "Обо мне"
+      },
+      {
+        "id": "experience",
+        "name": "Опыт"
+      },
+      {
+        "id": "projects",
+        "name": "Проекты"
+      }
+    ]
+  },
+  "main": {
+    "aboutSection": {
+      "name": "Обо мне",
+      "content": "<p className=\"mb-4\">\n  <span className=\"text-highlighted\">В 2020 году</span> я начал свой путь в\n  веб-разработке, создав сайт на <span className=\"text-highlighted\">Webflow</span>.\n  Этот первый проект разжег мой интерес к\n  <span className=\"text-highlighted\">кодированию</span> и\n  <span className=\"text-highlighted\">веб-разработке</span>, что побудило меня дальше\n  изучать эту область. С тех пор у меня была возможность поработать как\n  <span className=\"text-highlighted\">фрилансером</span>, так и в IT-отделе\n  <span className=\"text-highlighted\">e-commerce компании</span>.\n</p>\n<p className=\"mb-4\">\n  <span className=\"text-highlighted\">В настоящее время</span> я работаю как\n  <span className=\"text-highlighted\">pre-middle разработчик</span> и сосредотачиваясь\n  на создании <span className=\"text-highlighted\">масштабируемых веб-приложений</span>\n  . Мне нравится создавать решения, которые не только\n  <span className=\"text-highlighted\">надежны</span> и\n  <span className=\"text-highlighted\">эффективны</span>, но и\n  <span className=\"text-highlighted\">удобны для пользователя</span>.\n</p>\n<p className=\"mb-4\">\n  Вне работы я люблю <span className=\"text-highlighted\">читать</span>,\n  <span className=\"text-highlighted\">путешествовать</span>,\n  <span className=\"text-highlighted\">кататься на велосипеде</span>,\n  <span className=\"text-highlighted\">сноуборде</span>,\n  <span className=\"text-highlighted\">смотреть фильмы</span> и проводить время с\n  <span className=\"text-highlighted\">семьей</span> и\n  <span className=\"text-highlighted\">друзьями</span>. Я также увлекаюсь изучением\n  <span className=\"text-highlighted\">новых технологий</span> и\n  <span className=\"text-highlighted\">возможностей для развития</span>, всегда\n  стремясь расширить свои <span className=\"text-highlighted\">навыки</span> и идти в\n  ногу с <span className=\"text-highlighted\">последними тенденциями</span> в отрасли.\n</p>"
+    }
+  }
+}

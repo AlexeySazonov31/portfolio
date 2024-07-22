@@ -4,7 +4,7 @@ import { useTranslation, Trans } from "react-i18next";
 import { LangCvButtons } from "./LangCvButtons";
 import { SocialIcon } from "./SocialIcon";
 
-import { socialData } from "../../data/socialData";
+import { socialData } from "../../lib/data/socialData";
 
 export function Header() {
   const active = useActiveElementByIds(["about", "experience", "projects"]);

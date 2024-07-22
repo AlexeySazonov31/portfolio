@@ -1,0 +1,26 @@
+{
+  "header": {
+    "name": "Alexey <br className=\"hidden lg:block\" />Sazonov",
+    "shortDesc": "I produce high-quality, engaging, and user-friendly digital experiences.",
+    "sectionsNames": [
+      {
+        "id": "about",
+        "name": "about"
+      },
+      {
+        "id": "experience",
+        "name": "experience"
+      },
+      {
+        "id": "projects",
+        "name": "projects"
+      }
+    ]
+  },
+  "main": {
+    "aboutSection": {
+      "name": "About",
+      "content": "<p className=\"mb-4\">\n  <span className=\"text-slate-200 font-light\">Back in 2020</span>, I began my journey into web\n  development by creating a site using\n  <span className=\"text-slate-200 font-light\">Webflow</span>. This initial project sparked my\n  interest in <span className=\"text-slate-200 font-light\">coding</span> and\n  <span className=\"text-slate-200 font-light\">web development</span>, leading me to further\n  explore the field. Since then, I’ve had the opportunity to work both as a\n  <span className=\"text-slate-200 font-light\">freelancer</span> and within the IT department\n  of an <span className=\"text-slate-200 font-light\">e-commerce company</span>.\n</p>\n<p className=\"mb-4\">\n  <span className=\"text-slate-200 font-light\">Currently</span>, I work as a\n  <span className=\"text-slate-200 font-light\">pre-middle developer</span>, focusing on building\n  <span className=\"text-slate-200 font-light\">scalable web applications</span>. I enjoy\n  creating solutions that are not only\n  <span className=\"text-slate-200 font-light\">robust</span> and\n  <span className=\"text-slate-200 font-light\">efficient</span> but also\n  <span className=\"text-slate-200 font-light\">user-friendly</span> and\n  <span className=\"text-slate-200 font-light\">accessible</span>.\n</p>\n<p className=\"mb-4\">\n  Outside of work, I enjoy <span className=\"text-slate-200 font-light\">reading</span>,\n  <span className=\"text-slate-200 font-light\">traveling</span>,\n  <span className=\"text-slate-200 font-light\">riding my bike</span>,\n  <span className=\"text-slate-200 font-light\">snowboarding</span>,\n  <span className=\"text-slate-200 font-light\">watching movies</span>, and spending time with\n  <span className=\"text-slate-200 font-light\">family</span> and\n  <span className=\"text-slate-200 font-light\">friends</span>. I'm also passionate about\n  exploring <span className=\"text-slate-200 font-light\">new technologies</span> and\n  <span className=\"text-slate-200 font-light\">development opportunities</span>, always looking\n  to expand my <span className=\"text-slate-200 font-light\">skill set</span> and stay at the\n  <span className=\"text-slate-200 font-light\">forefront</span> of the industry.\n</p>"
+    }
+  }
+}

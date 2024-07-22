@@ -1,5 +1,5 @@
 import { SocialIconDataProps } from "../types";
-import SocialIcons from "../lib/social-icons";
+import SocialIcons from "../social-icons";
 
 export const socialData: SocialIconDataProps[] = [
   {

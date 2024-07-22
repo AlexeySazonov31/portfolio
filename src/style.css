@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .text-highlighted {
+    @apply text-slate-200 font-light;
+  }
+}
+
 @font-face {
   font-family: Poppins;
   src: url("./assets/fonts/Poppins/Poppins-Regular.ttf");
@@ -68,7 +74,6 @@
   src: url("./assets/fonts/Roboto/Roboto-Bold.ttf");
   font-weight: 600;
 }
-
 
 html,
 body {

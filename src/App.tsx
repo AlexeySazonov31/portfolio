@@ -1,15 +1,24 @@
 import { LocationProvider, Router, Route } from "preact-iso";
+import { useTranslation } from "react-i18next";
 
 import { GradientDiv } from "./components/Gradientdiv";
 import { Header } from "./components/header/Header";
 import { Home } from "./pages/Home/index.jsx";
 import { NotFound } from "./pages/_404.jsx";
+import { cn } from "./lib/utils";
 
 const App = () => {
+  const { i18n } = useTranslation();
+
   return (
     <LocationProvider>
       <GradientDiv className="h-full w-full" effectColor="#050029" backgroundColor="#03001C">
-        <div className="mx-auto min-h-screen max-w-screen-xl font-poppins px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
+        <div
+          className={cn(
+            "mx-auto min-h-screen max-w-screen-xl font-poppins px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0",
+            i18n.language === "ru" ? "font-montserrat" : "font-poppins"
+          )}
+        >
           <div className="lg:flex lg:justify-between lg:gap-4">
             <header className="lg:sticky lg:top-0 lg:flex lg:h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
               <Header />

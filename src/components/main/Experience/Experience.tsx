@@ -1,4 +1,4 @@
-import { experienceItems } from "../../../data/experienceItems";
+import { experienceItems } from "../../../lib/data/experienceItems";
 import { ExperienceItem } from "./ExperienceItem";
 
 export const Experience = () => {

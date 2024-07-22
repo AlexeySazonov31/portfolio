@@ -1,4 +1,4 @@
-import { ExperienceItem as ExperienceItemType } from "../../../types";
+import { ExperienceItem as ExperienceItemType } from "../../../lib/types";
 import { SkillItem } from "../SkillItem";
 
 export const ExperienceItem = ({ data }: { data: ExperienceItemType }) => {
