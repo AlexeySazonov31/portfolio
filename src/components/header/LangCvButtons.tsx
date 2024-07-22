@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-export const ChangeLangCvBtn = () => {
+export const LangCvButtons = () => {
   const { i18n } = useTranslation();
 
   const changeLanguage = () => {
@@ -10,7 +10,7 @@ export const ChangeLangCvBtn = () => {
 
   return (
     <>
-      <li class="mr-5 text-xs shrink-0 cursor-pointer">
+      <li class="mr-4 text-xs shrink-0 cursor-pointer">
         <span
           className="block text-slate-100 hover:text-white transition hover:scale-110 border-[1px] rounded w-7 py-[2px] border-slate-100 text-center select-none"
           onClick={() => changeLanguage()}

@@ -1,10 +1,10 @@
-import { useActiveElementByIds } from "../hooks/use-active-element-by-ids";
+import { useActiveElementByIds } from "../../hooks/use-active-element-by-ids";
 import { useTranslation, Trans } from "react-i18next";
 
-import { ChangeLangCvBtn } from "./ChangeLangCvBtn";
+import { LangCvButtons } from "./LangCvButtons";
 import { SocialIcon } from "./SocialIcon";
 
-import { socialData } from "../data/socialData";
+import { socialData } from "../../data/socialData";
 
 export function Header() {
   const active = useActiveElementByIds(["about", "experience", "projects"]);
@@ -53,7 +53,7 @@ export function Header() {
         </nav>
       </div>
       <ul class="ml-1 mt-8 flex items-center" aria-label="Social media">
-        <ChangeLangCvBtn />
+        <LangCvButtons />
         {socialData.map((elem, index) => (
           <SocialIcon data={elem} key={index} />
         ))}
