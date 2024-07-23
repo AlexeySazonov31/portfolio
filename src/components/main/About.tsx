@@ -1,11 +1,12 @@
 import { Trans, useTranslation } from "react-i18next";
+import { cn } from "../../lib/utils";
 
 export const About = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <section
-      className="relative -top-24 pt-24 text-slate-400 font-extralight leading-7"
+      className={cn("relative -top-24 pt-24 text-slate-400 font-extralight", i18n.language === "en" ? "leading-7" : "leading-[26px]")}
       id="about"
       aria-label="About me"
     >

@@ -5,10 +5,11 @@ import { LangCvButtons } from "./LangCvButtons";
 import { SocialIcon } from "./SocialIcon";
 
 import { socialData } from "../../lib/data/socialData";
+import { cn } from "../../lib/utils";
 
 export function Header() {
   const active = useActiveElementByIds(["about", "experience", "projects"]);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <>
@@ -20,15 +21,15 @@ export function Header() {
               src="/avatar.jpg"
               alt="Avatar"
             />
-            <h1 class="text-4xl font-bold tracking-tight text-slate-200 sm:text-[44px] leading-[45px]">
+            <h1 class={cn("text-4xl font-bold tracking-tight text-slate-200 leading-[45px]", i18n.language === "en" ? "sm:text-[44px]" : "sm:text-[42px]")}>
               <Trans i18nKey="header.name"></Trans>
             </h1>
           </div>
         </a>
-        <h2 class="mt-3 text-lg font-normal tracking-tight text-slate-200 sm:text-xl">
+        <h2 class="mt-3 text-lg font-normal font-poppins tracking-tight text-slate-200 sm:text-xl">
           Pre-Middle Fullstack Engineer
         </h2>
-        <p class="mt-3 max-w-xs text-slate-400 font-extralight leading-7">
+        <p class={cn("mt-3 max-w-xs text-slate-400 font-extralight", i18n.language === "en" ? "leading-7" : "text-[17px] pb-[5px]")}>
           {t("header.shortDesc")}
         </p>
         <nav class="nav hidden lg:block" aria-label="In-page jump links">
