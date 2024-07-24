@@ -27,7 +27,7 @@
       "companies": [
         {
           "header": "2024 — pesent",
-          "position": "Junior Fullstack Engineer",
+          "position": "Fullstack Engineer",
           "company": "BHub · freelance",
           "content": "As a freelancer at BHub, I continue to build web solutions using Javascript and PHP. I use tools like Tilda, Webflow, ManyChat, and Shopify to deliver projects efficiently. Details are provided below.",
           "skills": [
@@ -44,7 +44,7 @@
         },
         {
           "header": "2022 — 2024",
-          "position": "Junior Fullstack Engineer",
+          "position": "Fullstack Engineer",
           "company": "BHub · on staff",
           "content": "At BusinessHub, I developed web applications using Javascript, PHP, HTML, CSS, and React. I also worked with platforms like Tilda, Webflow, ManyChat, and Shopify to create custom web solutions. Additionally, I optimized Facebook Ads and managed contractors to ensure projects success.",
           "skills": [
@@ -61,7 +61,7 @@
         },
         {
           "header": "AUG — OCT 2022",
-          "position": "Junior Frontend Engineer",
+          "position": "Frontend Engineer",
           "company": "Fiverr, Kwork · freelance",
           "content": "During my time freelancing on platforms like Fiverr and Kwork, I focused on using HTML, CSS, and Javascript to create customized websites. I built and fine-tuned these sites to ensure they worked smoothly, handling everything from essential components to overall functionality across various projects.",
           "skills": ["HTML", "CSS", "Javascript"],
