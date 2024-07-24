@@ -1,5 +1,5 @@
 import { h, render } from "preact";
-import "./i18n"; // Import the i18n configuration
+import "./i18n";
 
 import App from "./App";
 import "./style.css";
