@@ -47,15 +47,23 @@
           "position": "Junior Fullstack Engineer",
           "company": "BHub · в штате",
           "content": "В BusinessHub я разрабатывал веб-приложения, используя Javascript, PHP, HTML, CSS и React. Также я работал с платформами Tilda, Webflow, ManyChat и Shopify для более быстрого создания пользовательских веб-решений. Кроме того, я оптимизировал Facebook Ads и управлял подрядчиками для обеспечения успеха проектов.",
-          "skills": ["Javascript", "PHP", "Shopify", "Tilda", "React", "Webflow", "Meta Ads", "ManyChat"],
+          "skills": [
+            "Javascript",
+            "PHP",
+            "Shopify",
+            "Tilda",
+            "React",
+            "Webflow",
+            "Meta Ads",
+            "ManyChat"
+          ],
           "link": "https://www.linkedin.com/company/%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D1%85%D0%B0%D0%B1/"
         },
         {
           "header": "AUG — OCT 2022",
           "position": "Junior Frontend Engineer",
           "company": "Fiverr, Kwork · freelance",
-          "content":
-            "Во время фриланса на таких платформах, как Fiverr и Kwork, я сосредоточился на использовании HTML, CSS и Javascript для создания сайтов под заказ. Я создавал и дорабатывал эти сайты, чтобы они работали безупречно, занимаясь всем, от основных компонентов до общей функциональности на различных проектах.",
+          "content": "Во время фриланса на таких платформах, как Fiverr и Kwork, я сосредоточился на использовании HTML, CSS и Javascript для создания сайтов под заказ. Я создавал и дорабатывал эти сайты, чтобы они работали безупречно, занимаясь всем, от основных компонентов до общей функциональности на различных проектах.",
           "skills": ["HTML", "CSS", "Javascript"],
           "link": "https://www.fiverr.com/"
         }
@@ -63,7 +71,90 @@
       "resume": "Посмотреть полное резюме"
     },
     "projectsSection": {
-      "name": "Проекты"
-    }
+      "name": "Проекты",
+      "petProjectsPartName": "Хобби-проекты",
+      "github": "Открыть GitHub",
+      "projects": {
+        "commercial": [
+          {
+            "title": "GummiMi Store",
+            "content": "Разработал функциональный сайт на Shopify для Gummimi's Hemp Gummies. Реализовал уникальные функции и интеграции, что помогло создать сильное онлайн-присутствие и улучшить пользовательский опыт.",
+            "skills": ["PHP", "Shopify"],
+            "link": "https://gummimi.com/",
+            "imageSrc": "/projects/gummimi.jpg"
+          },
+          {
+            "title": "Road App",
+            "content": "Участвовал в разработке системы управления на React. Реализованы дизайн фичей, флаги функций и поддержка интернационализации, тем и ролевого доступа. Приложение имеет переключаемые дизайны через админ-панель.",
+            "skills": ["React", "Webpack", "Jest", "Storybook", "Loki", "Cypress", "Role Handling"],
+            "link": "https://github.com/FURY-PERSON/road",
+            "imageSrc": "/projects/dorm.jpg"
+          },
+          {
+            "title": "BHub Info",
+            "content": "Создал сайт на WordPress для компании Bhub с использованием JavaScript, PHP, MySQL и jQuery. Проект был направлен на улучшение онлайн-присутствия Bhub, подчеркивая ключевые особенности компании и её технологии с помощью удобного и привлекательного дизайна.",
+            "skills": ["Javascript", "PHP", "WordPress", "MySQL", "jQuery"],
+            "link": "https://bhub.team/",
+            "imageSrc": "/projects/bhub.jpg"
+          },
+          {
+            "title": "Remedial Pax Store",
+            "content": "Разработал интернет-магазин на Shopify для Remedial Pax. Интегрировал пользовательские виджеты и расширения для улучшения функциональности сайта и упрощения процесса покупок. Также разрабатывал кастомные приложения для дополнительного функционала.",
+            "skills": ["PHP", "Shopify", "ManyChat"],
+            "link": "https://remedial.store/",
+            "imageSrc": "/projects/remedial.jpg"
+          }
+        ],
+        "pet": [
+          {
+            "title": "Search Movies App by TMDB",
+            "content": "Создал веб-приложение с использованием TypeScript, React, React Query, React Router Dom, Axios и Mantine. Реализовал функционал для удобного поиска и выбора фильмов, применяя современные технологии для создания плавного и удобного пользовательского интерфейса.",
+            "skills": [
+              "TypeScript",
+              "React",
+              "React Query",
+              "Mantine",
+              "Node.js",
+              "Express (Proxy Server)"
+            ],
+            "link": "https://sas-movies.vercel.app/",
+            "imageSrc": "/projects/movies.jpg"
+          },
+          {
+            "title": "Discord Clone App",
+            "content": "Разработал приложение-клон Discord с использованием Next.js, TypeScript, React, React Query, Socket.io, Tailwind, Shadcn/ui, ORM - Prisma, MySQL, Uploadthing, Clerk и LiveKit. Обеспечил возможность общения и взаимодействия пользователей, применяя современный технологический стек для создания современного и надёжного опыта.",
+            "skills": [
+              "Next.js",
+              "TypeScript",
+              "React",
+              "React Query",
+              "Socket.io",
+              "Tailwind",
+              "Shadcn/ui",
+              "ORM - Prisma",
+              "MySQL",
+              "Clerk Auth"
+            ],
+            "link": "https://disclone.sasdev.space/",
+            "imageSrc": "/projects/disclone.jpg"
+          },
+          {
+            "title": "Choice App: Decision Support",
+            "content": "Создал приложение Choice с использованием TypeScript, React, React Router Dom и Tailwind CSS. Реализовал функционал для удобного выбора опций, применяя современные технологии для создания простого и интуитивно понятного интерфейса.",
+            "skills": ["TypeScript", "React", "React Router Dom", "Tailwind"],
+            "link": "https://choice-react.vercel.app/",
+            "imageSrc": "/projects/choice.jpg"
+          },
+          {
+            "title": "Super Mario Clone",
+            "content": "Разработал веб-клон Super Mario с использованием Kaboom. Смешал классический геймплей с современными веб-технологиями для создания увлекательного игрового опыта.",
+            "skills": ["Kaboom", "Node.js", "Express"],
+            "link": "https://mario-clone.vercel.app/",
+            "imageSrc": "/projects/mario.jpg"
+          }
+        ]
+      }
+    },
+    "footer": "<p>\n  Написано в\n  <a href=\"https://code.visualstudio.com/\"\n    className=\"font-light text-slate-400 hover:text-[#B7ADFF] focus-visible:text-[#B7ADFF] transition\" target=\"_blank\"\n    rel=\"noreferrer noopener\" aria-label=\"Visual Studio Code (открывается в новой вкладке)\">\n    Visual Studio Code.\n  </a>\n  Разработанно с использованием\n  <a href=\"https://preactjs.com/\"\n    className=\"font-light text-slate-400 hover:text-[#B7ADFF] focus-visible:text-[#B7ADFF] transition\" target=\"_blank\"\n    rel=\"noreferrer noopener\" aria-label=\"Preact (открывается в новой вкладке)\">\n    Preact\n  </a>\n  и\n  <a href=\"https://tailwindcss.com/\"\n    className=\"font-light text-slate-400 hover:text-[#B7ADFF] focus-visible:text-[#B7ADFF] transition\" target=\"_blank\"\n    rel=\"noreferrer noopener\" aria-label=\"Tailwind CSS (открывается в новой вкладке)\">\n    Tailwind CSS\n  </a>\n  для обеспечения плавного пользовательского опыта. Весь текст выполнен в\n  <a href=\"https://fonts.google.com/specimen/Poppins/\"\n    className=\"font-light text-slate-400 hover:text-[#B7ADFF] focus-visible:text-[#B7ADFF] transition\" target=\"_blank\"\n    rel=\"noreferrer noopener\" aria-label=\"Poppins (открывается в новой вкладке)\">\n    Poppins\n  </a>\n  и\n  <a href=\"https://fonts.google.com/specimen/Montserrat/\"\n    className=\"font-light text-slate-400 hover:text-[#B7ADFF] focus-visible:text-[#B7ADFF] transition\" target=\"_blank\"\n    rel=\"noreferrer noopener\" aria-label=\"Montserrat (открывается в новой вкладке)\">\n    Montserrat\n  </a>\n  шрифтах. Развернуто на VPS с использованием\n  <a href=\"https://www.docker.com/\"\n    className=\"font-light text-slate-400 hover:text-[#B7ADFF] focus-visible:text-[#B7ADFF] transition\" target=\"_blank\"\n    rel=\"noreferrer noopener\" aria-label=\"Docker (открывается в новой вкладке)\">\n    Docker\n  </a>\n  .\n</p>"
   }
 }

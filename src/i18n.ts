@@ -22,9 +22,9 @@ i18n
   .init({
     resources,
     lng: 'en',
-    debug: true,
+    debug: false,
     interpolation: {
-      escapeValue: false, // React already does escaping
+      escapeValue: false,
     },
     backend: {
       loadPath: '/locales/{{lng}}/{{ns}}.json',
@@ -33,7 +33,6 @@ i18n
       useSuspense: false,
       transSupportBasicHtmlNodes: true,
       transKeepBasicHtmlNodesFor: ['br', 'strong', 'i', 'p'],
-      // transWrapTextNodes: 'span'
     },
   });
 

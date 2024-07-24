@@ -15,3 +15,11 @@ export interface ExperienceItem {
   skills: string[];
   link: string;
 }
+
+export interface ProjectItem {
+  title: string;
+  content: string;
+  skills: string[];
+  link: string;
+  imageSrc: string;
+}

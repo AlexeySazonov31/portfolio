@@ -47,15 +47,23 @@
           "position": "Junior Fullstack Engineer",
           "company": "BHub · on staff",
           "content": "At BusinessHub, I developed web applications using Javascript, PHP, HTML, CSS, and React. I also worked with platforms like Tilda, Webflow, ManyChat, and Shopify to create custom web solutions. Additionally, I optimized Facebook Ads and managed contractors to ensure projects success.",
-          "skills": ["Javascript", "PHP", "Shopify", "Tilda", "React", "Webflow", "Meta Ads", "ManyChat"],
+          "skills": [
+            "Javascript",
+            "PHP",
+            "Shopify",
+            "Tilda",
+            "React",
+            "Webflow",
+            "Meta Ads",
+            "ManyChat"
+          ],
           "link": "https://www.linkedin.com/company/%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D1%85%D0%B0%D0%B1/"
         },
         {
           "header": "AUG — OCT 2022",
           "position": "Junior Frontend Engineer",
           "company": "Fiverr, Kwork · freelance",
-          "content":
-            "During my time freelancing on platforms like Fiverr and Kwork, I focused on using HTML, CSS, and Javascript to create customized websites. I built and fine-tuned these sites to ensure they worked smoothly, handling everything from essential components to overall functionality across various projects.",
+          "content": "During my time freelancing on platforms like Fiverr and Kwork, I focused on using HTML, CSS, and Javascript to create customized websites. I built and fine-tuned these sites to ensure they worked smoothly, handling everything from essential components to overall functionality across various projects.",
           "skills": ["HTML", "CSS", "Javascript"],
           "link": "https://www.fiverr.com/"
         }
@@ -63,7 +71,90 @@
       "resume": "View Full Resume (rus)"
     },
     "projectsSection": {
-      "name": "Projects"
-    }
+      "name": "Projects",
+      "petProjectsPartName": "Pet-Projects",
+      "github": "View on GitHub",
+      "projects": {
+        "commercial": [
+          {
+            "title": "GummiMi Store",
+            "content": "Crafted a visually captivating Shopify site for Gummimi's Hemp Gummies, emphasizing meticulous design and graphics. Successfully implemented a unique brand identity, enhancing user engagement and driving sales through an immersive online experience.",
+            "skills": ["PHP", "Shopify"],
+            "link": "https://gummimi.com/",
+            "imageSrc": "/projects/gummimi.jpg"
+          },
+          {
+            "title": "Road App",
+            "content": "Contributed to the development of a dorm-management system using React. Implemented feature slices design and feature flags. The app supports internationalization, themes, and role-based access, with switchable designs via the admin panel. Used for learning and experimenting with various technologies.",
+            "skills": ["React", "Webpack", "Jest", "Storybook", "Loki", "Cypress", "Role Handling"],
+            "link": "https://github.com/FURY-PERSON/road",
+            "imageSrc": "/projects/dorm.jpg"
+          },
+          {
+            "title": "BHub Info",
+            "content": "Built a WordPress site for BHub using JavaScript, PHP, MySQL, and jQuery. The project aimed to boost Bhub’s online presence, highlighting the company’s key features and technology with a user-friendly and engaging design",
+            "skills": ["Javascript", "PHP", "WordPress", "MySQL", "jQuery"],
+            "link": "https://bhub.team/",
+            "imageSrc": "/projects/bhub.jpg"
+          },
+          {
+            "title": "Remedial Pax Store",
+            "content": "Developed a Shopify store specializing in Remedial Pax creams and serums. Integrated custom widgets and add-ons to enhance user experience and streamline product selection, providing a seamless shopping journey.",
+            "skills": ["PHP", "Shopify", "ManyChat"],
+            "link": "https://remedial.store/",
+            "imageSrc": "/projects/remedial.jpg"
+          }
+        ],
+        "pet": [
+          {
+            "title": "Search Movies App by TMDB",
+            "content": "Created a web app using TypeScript, React, React Query, React Router Dom, Axios, and Mantine, allowing users to browse and pick movies effortlessly, leveraging modern technologies for a smooth, user-friendly experience.",
+            "skills": [
+              "TypeScript",
+              "React",
+              "React Query",
+              "Mantine",
+              "Node.js",
+              "Express (Proxy Server)"
+            ],
+            "link": "https://sas-movies.vercel.app/",
+            "imageSrc": "/projects/movies.jpg"
+          },
+          {
+            "title": "Discord Clone App",
+            "content": "Developed a Discord Clone app using Next.js, TypeScript, React, React Query, Socket.io, Tailwind, Shadcn/ui, ORM - Prisma, MySQL, Uploadthing, Clerk, and LiveKit. Enabled users to chat and connect seamlessly, leveraging a robust tech stack for a modern experience.",
+            "skills": [
+              "Next.js",
+              "TypeScript",
+              "React",
+              "React Query",
+              "Socket.io",
+              "Tailwind",
+              "Shadcn/ui",
+              "ORM - Prisma",
+              "MySQL",
+              "Clerk Auth"
+            ],
+            "link": "https://disclone.sasdev.space/",
+            "imageSrc": "/projects/disclone.jpg"
+          },
+          {
+            "title": "Choice App: Decision Support",
+            "content": "Built the Choice app using TypeScript, React, React Router Dom, and Tailwind CSS, allowing users to make selections effortlessly, leveraging modern technologies for a streamlined and intuitive experience.",
+            "skills": ["TypeScript", "React", "React Router Dom", "Tailwind"],
+            "link": "https://choice-react.vercel.app/",
+            "imageSrc": "/projects/choice.jpg"
+          },
+          {
+            "title": "Super Mario Clone",
+            "content": "Developed a web-based Super Mario Clone using Kaboom, blending classic gameplay with modern web technologies for an engaging experience.",
+            "skills": ["Kaboom", "Node.js", "Express"],
+            "link": "https://mario-clone.vercel.app/",
+            "imageSrc": "/projects/mario.jpg"
+          }
+        ]
+      }
+    },
+    "footer": "<p>\n  Coded in\n  <a href=\"https://code.visualstudio.com/\"\n    className=\"font-light text-slate-400 hover:text-[#B7ADFF] focus-visible:text-[#B7ADFF] transition\" target=\"_blank\"\n    rel=\"noreferrer noopener\" aria-label=\"Visual Studio Code (opens in a new tab)\">\n    Visual Studio Code.\n  </a>\n  Built with\n  <a href=\"https://preactjs.com/\"\n    className=\"font-light text-slate-400 hover:text-[#B7ADFF] focus-visible:text-[#B7ADFF] transition\" target=\"_blank\"\n    rel=\"noreferrer noopener\" aria-label=\"Preact (opens in a new tab)\">\n    Preact\n  </a>\n  and\n  <a href=\"https://tailwindcss.com/\"\n    className=\"font-light text-slate-400 hover:text-[#B7ADFF] focus-visible:text-[#B7ADFF] transition\" target=\"_blank\"\n    rel=\"noreferrer noopener\" aria-label=\"Tailwind CSS (opens in a new tab)\">\n    Tailwind CSS\n  </a>\n  for a seamless user experience. All text is set in the\n  <a href=\"https://fonts.google.com/specimen/Poppins/\"\n    className=\"font-light text-slate-400 hover:text-[#B7ADFF] focus-visible:text-[#B7ADFF] transition\" target=\"_blank\"\n    rel=\"noreferrer noopener\" aria-label=\"Poppins (opens in a new tab)\">\n    Poppins\n  </a>\n  and\n  <a href=\"https://fonts.google.com/specimen/Montserrat/\"\n    className=\"font-light text-slate-400 hover:text-[#B7ADFF] focus-visible:text-[#B7ADFF] transition\" target=\"_blank\"\n    rel=\"noreferrer noopener\" aria-label=\"Montserrat (opens in a new tab)\">\n    Montserrat\n  </a>\n  typeface. Deployed on a VPS with\n  <a href=\"https://www.docker.com/\"\n    className=\"font-light text-slate-400 hover:text-[#B7ADFF] focus-visible:text-[#B7ADFF] transition\" target=\"_blank\"\n    rel=\"noreferrer noopener\" aria-label=\"Docker (opens in a new tab)\">\n    Docker\n  </a>\n  .\n</p>"
   }
 }

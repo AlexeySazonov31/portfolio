@@ -4,7 +4,6 @@ export const LangCvButtons = () => {
   const { i18n } = useTranslation();
 
   const changeLanguage = () => {
-    console.log(i18n.language);
     i18n.changeLanguage(i18n.language === "en" ? "ru" : "en");
   };
 
