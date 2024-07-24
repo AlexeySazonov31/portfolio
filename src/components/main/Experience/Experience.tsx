@@ -1,8 +1,8 @@
-import { experienceItems } from "../../../lib/data/experienceItems";
+import { useTranslation } from "react-i18next";
 import { ExperienceItem } from "./ExperienceItem";
 
 export const Experience = () => {
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <section
@@ -12,11 +12,11 @@ export const Experience = () => {
     >
       <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 bg-[#03001C]/80 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
         <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
-          Experience
+          {t("main.experienceSection.name")}
         </h2>
       </div>
       <ol className="group/list">
-        {experienceItems.map((data, id) => (
+        {(t("main.experienceSection.companies", { returnObjects: true }) as []).map((data, id) => (
           <ExperienceItem data={data} key={id} />
         ))}
       </ol>
@@ -30,9 +30,8 @@ export const Experience = () => {
           title="View Full Resume (opens in a new tab)"
         >
           <span>
-            View Full{" "}
             <span className="inline-block">
-              Resume (rus)
+              {t("main.experienceSection.resume")}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
