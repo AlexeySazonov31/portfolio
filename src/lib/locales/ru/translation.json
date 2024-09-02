@@ -26,23 +26,6 @@
       "name": "Опыт",
       "companies": [
         {
-          "header": "2024 — pesent",
-          "position": "Fullstack Engineer",
-          "company": "BHub · фриланс",
-          "content": "Как фрилансер в BHub я продолжаю создавать веб-решения, используя JS/TS и PHP. Также я использую no-code инструменты, такие как Tilda, Webflow, ManyChat и Shopify, для более эффективного выполнения проектов, не требующих кастомного подхода. Подробности приведены ниже.",
-          "skills": [
-            "Javascript",
-            "PHP",
-            "Shopify",
-            "Tilda",
-            "React",
-            "Webflow",
-            "Meta Ads",
-            "ManyChat"
-          ],
-          "link": "https://www.linkedin.com/company/%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D1%85%D0%B0%D0%B1/"
-        },
-        {
           "header": "2022 — 2024",
           "position": "Fullstack Engineer",
           "company": "BHub · в штате",

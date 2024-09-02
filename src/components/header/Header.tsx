@@ -15,21 +15,31 @@ export function Header() {
     <>
       <div>
         <a href="/">
-          <div className="flex flex-row flex-nowrap gap-4 items-center">
+          <div className="flex flex-row items-center gap-4 flex-nowrap">
             <img
-              className="w-24 h-24 rounded-xl pointer-events-none"
+              className="w-24 h-24 pointer-events-none rounded-xl"
               src="/avatar.jpg"
               alt="Avatar"
             />
-            <h1 class={cn("text-4xl font-bold tracking-tight text-slate-200 leading-[45px]", i18n.language === "en" ? "sm:text-[44px]" : "sm:text-[42px]")}>
+            <h1
+              class={cn(
+                "text-4xl font-bold tracking-tight text-slate-200 leading-[45px]",
+                i18n.language === "en" ? "sm:text-[44px]" : "sm:text-[42px]"
+              )}
+            >
               <Trans i18nKey="header.name"></Trans>
             </h1>
           </div>
         </a>
         <h2 class="mt-3 text-lg font-normal font-poppins tracking-tight text-slate-200 sm:text-xl">
-          Pre-Middle Fullstack Engineer
+          Fullstack Engineer
         </h2>
-        <p class={cn("mt-3 max-w-xs text-slate-400 font-extralight", i18n.language === "en" ? "leading-7" : "text-[17px] pb-[5px]")}>
+        <p
+          class={cn(
+            "mt-3 max-w-xs text-slate-400 font-extralight",
+            i18n.language === "en" ? "leading-7" : "text-[17px] pb-[5px]"
+          )}
+        >
           {t("header.shortDesc")}
         </p>
         <nav class="nav hidden lg:block" aria-label="In-page jump links">
